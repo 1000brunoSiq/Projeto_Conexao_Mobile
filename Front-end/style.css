@@ -11,7 +11,7 @@ body{
 }
 .painel{
     margin: auto;
-    margin-left: 130px;
+    margin-left: 230px;
     margin-top: 70px;
     background-color: rgb(101, 215, 243);
     width: 350px;
@@ -37,7 +37,7 @@ h4{
    }
 .painel-2{
     margin: auto;
-    margin-left: 487px;
+    margin-left: 587px;
     margin-top: -550px;
     background-color: rgb(253, 253, 253);
     width: 700px;
@@ -119,3 +119,54 @@ border-radius: 3px;
      font-weight: bolder;
 }
 
+#icon{
+    color: black;
+    height: 170px;
+    height: 170px;
+    margin-left: 1130px;
+    margin-top: -352px;
+
+
+
+}
+#icon-2{
+    color: black;
+    height: 170px;
+    height: 170px;
+    margin-left: 1130px;
+    margin-top: -120px;
+
+
+
+}
+
+#icon-3{
+    color: black;
+    height: 170px;
+    height: 170px;
+    margin-left: 1130px;
+    margin-top: -117px;
+
+
+
+}
+#icon-4{
+    color: black;
+    height: 170px;
+    height: 170px;
+    margin-left: 1130px;
+    margin-top: -117px;
+
+
+
+}
+#icon-5{
+    color: black;
+    height: 170px;
+    height: 170px;
+    margin-left: 1130px;
+    margin-top: -117px;
+
+
+
+}
