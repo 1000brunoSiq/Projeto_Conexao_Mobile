@@ -1,0 +1,97 @@
+body{
+    background-image: url(Front-end/imagens/Apresentação\ comercial\ para\ empresas\ moderna\ azul\ \(2\).png);
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+.logo{
+margin-top: -60px;
+width: 50%;
+
+
+}
+
+
+.caixa-2{  
+    margin-top: -50px;
+   margin-left: 300px;
+    width: 250px; 
+    height: 300px; 
+    padding: 20px; 
+    border: 5px solid rgba(0, 136, 247, 0.384); 
+    border-radius: 10px;
+    box-sizing: border-box; 
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+   
+}
+
+.suporte{
+ margin-top: -150px;
+ width: 30%;
+ margin-left: 178px;
+
+}
+h2{
+    margin-left: 365px;
+    margin-top: 40px;
+}
+
+
+.caixa-3{  
+    margin-top: -260px;
+   margin-left: 600px;
+    width: 250px; 
+    height: 300px; 
+    padding: 20px; 
+    border: 5px solid rgba(0, 136, 247, 0.384); 
+    border-radius: 10px;
+    box-sizing: border-box; 
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+   
+}
+
+.email{
+    margin-top: -150px;
+    width: 30%;
+    margin-left: 328px;
+
+
+}
+h3{
+    margin-left: 615px;
+    margin-top: 39px;
+}
+
+.caixa-4{  
+    margin-top: -250px;
+   margin-left: 900px;
+    width: 250px; 
+    height: 300px; 
+    padding: 20px; 
+    border: 5px solid rgba(0, 136, 247, 0.384); 
+    border-radius: 10px;
+    box-sizing: border-box; 
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+   
+}
+
+
+.rastreio{
+    margin-top: -150px;
+    width: 30%;
+    margin-left: 628px;
+
+}
+
+#aaa{
+    margin-left: 950px;
+    margin-top: 40px;
+}
+

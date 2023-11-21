@@ -19,7 +19,9 @@ $row = $res->fetch_object();
 $qtd = $res->num_rows;
 
 if($qtd > 0){
-    $_SESSION["usuario"] =
+    $_SESSION["email"] = $usuario;
+    $_SESSION["senha"] = $usuario;
+    header('location:')
 }else{
 
 };
