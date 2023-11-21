@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Dela+Gothic+One&family=Poppins:wght@700;800;900&display=swap');
 
 body{
-    background-color: #f0eeee54;
-    color: aliceblue;
-    font-family: 'Belanosima', sans-serif; 
-    font-family: 'Dela Gothic One', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    
+background-color: rgba(0, 204, 255, 0.116);
+color: white;
+font-family: 'Belanosima', sans-serif; 
+font-family: 'Dela Gothic One', sans-serif;
+font-family: 'Poppins', sans-serif;
+
 }
+
+
+
 .painel{
     margin: auto;
     margin-left: 230px;
@@ -36,10 +39,10 @@ h4{
    }
 .painel-2{
     margin: auto;
-    margin-left: 587px;
-    margin-top: -550px;
+    margin-left: 280px;
+    margin-top: 100px;
     background-color: rgb(253, 253, 253);
-    width: 700px;
+    width: 1000px;
     height: 500px;
     border-radius: 25px;
     text-align: center;
@@ -54,24 +57,6 @@ h4{
 }
 
 
-#email{
-    margin-top: -100px;
-    height: 25px;
-    width: 280px;
-    border-radius: 10px;
-    border: none;
-    
-}
-
-#senha{
-    
-    height: 25px;
-    border: none;
-    width: 280px;
-    border-radius: 10px;
-    margin: cover;
-
-}
 
   
 
@@ -118,54 +103,38 @@ border-radius: 3px;
      font-weight: bolder;
 }
 
-#icon{
-    color: black;
-    height: 170px;
-    height: 170px;
-    margin-left: 1130px;
-    margin-top: -352px;
-
-
-
+#emaill{
+    margin-top: 50px;
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    
 }
-#icon-2{
-    color: black;
-    height: 170px;
-    height: 170px;
-    margin-left: 1130px;
-    margin-top: -120px;
 
 
+#senhaa{
+    
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 313px;
+    margin-top: -250px;
 
 }
 
-#icon-3{
-    color: black;
-    height: 170px;
-    height: 170px;
-    margin-left: 1130px;
-    margin-top: -117px;
 
-
-
-}
-#icon-4{
-    color: black;
-    height: 170px;
-    height: 170px;
-    margin-left: 1130px;
-    margin-top: -117px;
-
-
-
-}
-#icon-5{
-    color: black;
-    height: 170px;
-    height: 170px;
-    margin-left: 1130px;
-    margin-top: -117px;
-
-
+.meu-botao{
+    margin-left: 700px;
+    color: rgb(255, 240, 240);
+    background-color: rgb(14, 139, 197);
+    border-color: aliceblue;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(147, 241, 253, 0.034);   
+    height: 50px;
+    width:170px;
+    margin-top: 40px;
+    font-weight: bolder;
 
 }

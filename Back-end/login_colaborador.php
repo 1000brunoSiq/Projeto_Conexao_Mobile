@@ -42,15 +42,15 @@
 
         }
 
-        .inputSubmit:hover {
+        /* .inputSubmit:hover {
             background-color: deepskyblue;
             cursor: pointer;
-        }
+        } */
     </style>
 </head>
 
 <body>
-    <a href="index.php">Início</a>
+    
     <div>
         <h1 style="text-align: left;">Login</h1>
         <form action="testLogin.php" method="POST">
