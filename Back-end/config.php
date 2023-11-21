@@ -3,7 +3,7 @@
 $DBHost = 'https://conexaomobile.000webhostapp.com/';
 $DBUsername = 'root';
 $DBPassword = '';
-$DBName = ' id21482081__databaseconmobile_';
+$DBName = '_databasecm_';
 
 $conexao = new mysqli($DBHost, $DBUsername, $DBPassword, $DBName);
 
