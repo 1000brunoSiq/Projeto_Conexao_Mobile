@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<form action="Back-end/login_cliente.php" method="post">
+<form action="login_cliente.php" method="post">
     <div class="painel">
         <h1>CONEXÃO MOBILE</h1>
         
@@ -17,7 +17,7 @@
 
         <h4 id="h4">acesse sua conta  agora mesmo</h3>
 
-        <input type="email" placeholder="   E-mail" id="email">
+        <input type="email" placeholder="   E-mail" name="email" id="email">
     
         <br> <br>
         <input type="password" placeholder="   Senha" id="senha">
@@ -30,16 +30,17 @@
 
     </div>
 </form>
-<form action="Back-end/cadastro_cliente.php">
+<form action="login_cliente.php" method="post">
+    
             <div class="painel-2">
                 
                 <h1>Crie sua conta</h1>
                 <h3 id="titulo">Preencha seus dados</h3>
-                <input type="text" placeholder="Nome" id="nome">
-                <input type="text" placeholder="Celular" id="nome">
-                <input type="email" placeholder="E-mail" id="nome">
-                <input type="password" placeholder="Senha" id="nome">
-                <input type="text" placeholder="Endereço" id="nome">
+                <input type="text" placeholder="Nome" name="nome" id="nome">
+                <input type="text" placeholder="Celular" name="Celular" id="nome">
+                <input type="email" placeholder="E-mail" name="email" id="nome">
+                <input type="password" placeholder="Senha" name="senha" id="nome">
+                <input type="text" placeholder="Endereço" name="endereco" id="nome">
 
             </div>
 

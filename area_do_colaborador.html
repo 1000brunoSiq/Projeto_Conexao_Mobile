@@ -7,24 +7,20 @@
         <link rel="stylesheet" href="area_do_colaborador.css">
     </head>
         <body>
-            <form action="/Back-end/testLogin.php" method="post">
+        <form action="login_colaborador.php" method="POST">
                 
-         <div class="painel-2">
-                        
-            <h1>Area do colaborador</h1>
-            <h3 id="titulo">Preencha seus dados</h3>
-            <input type="email" placeholder=" E-mail" name="email" id="emaill">
-        </div>
+            <div class="painel-2">                        
+                <h1>Area do colaborador</h1>
+                <h3 id="titulo">Preencha seus dados</h3>
+                <input type="email" placeholder=" E-mail" name="email" id="emaill">
+            </div>
+            <div id="senhaa">
+                <input type="password" placeholder="Senha" name="senha" id="senhaa">
+            </div>
+            <div >
+                <button class ="meu-botao" type="submit">LOGIN</button>
+            </div>
             
-
-        <div id="senhaa">
-            <input type="password" placeholder="Senha" name="senha" id="senhaa">
-        </div>
-        <div>
-            
-            <button class ="meu-botao" type="submit">LOGIN</button>
-        </div>
-
         </form>
-        </body>
+    </body>
     </html>
