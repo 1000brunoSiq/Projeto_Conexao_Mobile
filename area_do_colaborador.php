@@ -17,9 +17,10 @@
                 <?php
             //  mensagem de erro 
             if (isset($_GET['erro']) && !empty($_GET['erro'])) {
-                echo '<p style="color: red;">' . $_GET['erro'] . '</p>';
+                echo '<p style="color: gray;">' . $_GET['erro'] . '</p>';
             }
             ?>
+            
                 <input type="email" placeholder=" E-mail" name="email" id="emaill">
                 
             </div>
