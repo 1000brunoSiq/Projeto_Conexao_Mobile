@@ -2,32 +2,30 @@
 include ('config.php');
 
 session_start();
-if(empty($_POST) or (empty($_POST["usuario"] or empty($_POST["senha"])))){
-    header('Location: index.html');}         
+if (empty($_POST) || empty($_POST["email"]) || empty($_POST["senha"])) {
 
+    header('Location: cadastro.php?erro=Campos email e senha são obrigatórios!');
+    exit;
+}
 
+$email = $_POST['email'];
+$senha = $_POST['senha'];
 
-//painel 1
-    $email= $_POST['email'];
-    $senha= $_POST['senha'];
+$sql = "SELECT * FROM usuarios
+        WHERE usuario = '{$email}' AND senha = '{$senha}'";
 
-   $sql = "SELECT * FROM usuarios
-            WHERE usuario = '{$usuario}'
-            END senha = '{$senha}'";
-
-$res = $conexao->query($sql) or die($conn->error);
+$res = $conexao->query($sql) or die($conexao->error);
 
 $row = $res->fetch_object();
 
 $qtd = $res->num_rows;
 
-if($qtd > 0){
-    $_SESSION["email"] = $usuario;
+if ($qtd > 0) {
+    $_SESSION["email"] = $email;
     $_SESSION["senha"] = $senha;
-    header('location: Location: index.html');
-}else{
-    header ("<script>alert('usuário e/ou senha incorreto');</script>");
-};
-
-    
+    header('Location: index.html');
+    exit;
+} else {
+    echo "<script>alert('Usuário e/ou senha incorretos');</script>";
+}
 ?>
