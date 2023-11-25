@@ -5,7 +5,7 @@ session_start();
 // print_r($_POST);
 
 // if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
-    if (empty($_POST['email']) || empty($_POST['senha'])) {
+    if (empty($_POST['email']) || empty($_POST['senha'])) { // impede que a requisição seja feita caso os campos estejam vazios e gera um alerta conforme mostra na prox line
          header('Location: area_do_colaborador.php?erro=Campos email e senha são obrigatórios!');
         exit;}
  //Acessa
