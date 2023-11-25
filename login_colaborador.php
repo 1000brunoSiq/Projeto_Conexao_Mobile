@@ -1,9 +1,15 @@
 <?php
 include ('config.php');
 session_start();
-// print_r($_REQUEST);
-if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
-    //Acessa
+
+// print_r($_POST);
+
+// if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
+    if (empty($_POST['email']) || empty($_POST['senha'])) {
+        echo "Campos email e senha são obrigatórios!";
+        header('Location: area_do_colaborador.php?erro=Campos email e senha são obrigatórios!');
+        exit;}
+ //Acessa
     
     $email = $_POST['email'];
     $senha = $_POST['senha'];
@@ -22,8 +28,8 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
     if (mysqli_num_rows($result) < 1) {
         unset($_SESSION['email']);
         unset($_SESSION['senha']);
-        header ("<script>alert('usuário e/ou senha incorreto');</script>");
-        // header('Location:area_do_colaborador.html');    
+        echo "Usuário e/ou senha incorretos!";
+        header('Location:area_do_colaborador.php');    
 
     } else {
 
@@ -32,4 +38,5 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
 
         header('Location:sistema.php');
     }
-}
+
+?>

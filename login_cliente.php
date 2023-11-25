@@ -15,7 +15,7 @@ if(empty($_POST) or (empty($_POST["usuario"] or empty($_POST["senha"])))){
             WHERE usuario = '{$usuario}'
             END senha = '{$senha}'";
 
-$res = $conn->query($sql) or die($conn->error);
+$res = $conexao->query($sql) or die($conn->error);
 
 $row = $res->fetch_object();
 
