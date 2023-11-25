@@ -1,0 +1,206 @@
+header {
+    background-color: #3498db; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    padding: 1px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 220px; /* Largura da logo, ajuste conforme necessário */
+    height:180px;
+    
+  }
+  
+  .search {
+    padding: 5px;
+    
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button {
+    background-color: #fff; /* Cor de fundo dos botões */
+    color: #3498db; /* Cor do texto dos botões */
+    padding: 8px 15px;
+    margin-left: 10px; /* Espaçamento entre os botões */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cart {
+    margin-left: 20px;
+  }
+  
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .address-section,
+
+    .payment-section {
+      width: 50%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .payment-method {
+      margin-bottom: 20px;
+    }
+    
+    input[type="text"], button {
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+    
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 13px 25px;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+    
+  
+  
+    #menu ul { padding:30px;
+      margin:0px;
+      background-color:#42CBF6
+      ;
+      list-style:none;
+      text-align: center;
+      
+      
+    }
+  
+    #menu ul li { display: inline;
+      border-radius: 5px;
+  }
+  
+    #menu ul li a { 
+      border-radius: 10px;
+      padding: 2px 10px; 
+      display: inline-block; 
+      background-color:#fff; 
+      color: #333; 
+      text-decoration: none; 
+      border-bottom:3px solid #EDEDED; 
+  }
+  
+  
+  footer {
+    background-color: #3498db; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    padding: 40px;
+    text-align: center;
+    font-weight: bold
+  }
+  
+  footer a {
+    color: #fff; /* Cor dos links brancos */
+    text-decoration: none;
+    margin: 0 50px; /* Espaçamento entre os links */
+  }
+  
+  
+  #numero{
+    margin-left: 25px;
+  }
+  #cidade{
+    margin-left: 320px;
+    margin-top: -115px;
+
+}
+
+#estado{
+    margin-left: 320px;
+    margin-top: 2px;
+
+}
+
+#CEP{
+    margin-left: 47px;
+    margin-top: -10px;
+}
+
+#complemento{
+    margin-left: 270px;
+    margin-top: -40px;
+}
+
+#Endereço{
+
+margin-left: 250px;
+}
+
+
+#cartao{
+
+    margin-left: 2px;
+
+
+}
+
+#numerocartao{
+    margin-left: 51px;
+    margin-top: 5px;
+
+
+
+}
+
+#data{
+    margin-left: 372px;
+    margin-top: -100px;
+}
+
+#cvv{
+margin-left: 470px;
+margin-top: -10px;
+}
+
+#card-status{
+margin-left: 250px;
+
+padding: 20px;
+}
+.gerarboleto{
+    margin-left: 280px;
+    margin-top: -0px;
+}
+h4{
+    margin-left: 60px;
+    font-size: larger;
+}
+
+#h3{
+    margin-left: 20px;
+}
+
+#pix{
+margin-left: -250px;
+
+
+}
+
+#pix-2{
+    margin-left: -175px;
+    }
