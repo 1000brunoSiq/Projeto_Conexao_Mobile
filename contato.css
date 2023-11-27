@@ -1,7 +1,12 @@
 body{
-    background-image: url(imagens/Apresentação\ comercial\ para\ empresas\ moderna\ azul\ \(2\).png);
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    background-image: url(./assets/img/Apresentação\ comercial\ para\ empresas\ moderna\ azul\ \(6\).png);
+    font-family: 'Dela Gothic One', sans-serif;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playpen Sans', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -93,5 +98,30 @@ h3{
 #aaa{
     margin-left: 950px;
     margin-top: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    display: inline;
+    margin-right: 20px; /* Espaçamento entre os itens */
+
+  }
+
+  .lista{
+    color: aliceblue;
+    margin-left: 650px;
+    margin-top: -420px;
+    font-size: 23px;
+    text-decoration: none;
+
+  }
+  #pagina-inicial{
+    color: aliceblue;
+   text-decoration: none;
+
+
 }
 
