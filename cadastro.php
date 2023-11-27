@@ -40,7 +40,7 @@
                 <h1>Crie sua conta</h1>
                 <h3 id="titulo">Preencha seus dados</h3>
                 <input type="text" placeholder="Nome" name="nome" id="nome">
-                <input type="text" placeholder="Celular" name="Celular" id="nome">
+                <input type="text" placeholder="Celular" name="celular" id="nome">
                 <input type="email" placeholder="E-mail" name="email" id="nome">
                 <input type="password" placeholder="Senha" name="senha" id="nome">
                 <input type="text" placeholder="Endereço" name="endereco" id="nome">
