@@ -3,7 +3,7 @@
 
 
 body{
-    background-image: url(imagens/Apresentação\ comercial\ para\ empresas\ moderna\ azul\ \(2\).png);
+    background-image: url(./Apresentação\ comercial\ para\ empresas\ moderna\ azul\ \(2\).png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Dela Gothic One', sans-serif;
@@ -62,7 +62,22 @@ ul {
     margin-top: -240px;
     font-size: 20px;
     color: aliceblue;
+    text-decoration: none;
+
   }
 
+  #pagina-inicial{
+    color: white;
+    text-decoration: none;
+  }
+
+  #sobre-nos{
+    color: white;
+    text-decoration: none;
+  }
+  #contato{
+    color: white;
+    text-decoration: none;
+  }
 
   
