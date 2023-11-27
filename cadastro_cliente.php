@@ -14,10 +14,11 @@ $row = mysqli_fetch_assoc($result);
 
 if($row['total'] == 1 ){
     $_SESSION['usuario_existe'] = true;
-    header('location: cadastro_cliente.php');
+    header('location: cadastro.php?erro=Email já cadastrado. Escolha outro email.');
     exit;
 }
-$sql = "INSERT INTO cadastro_clientes (nome,  celular, email, senha, endereco) VALUES ('$nome', '$celular', '$email',  '$senha', '$endereco')";
+$sql = "INSERT INTO cadastro_clientes (nome, celular, email, senha, endereco) VALUES ('$nome', '$celular', '$email', '$senha', '$endereco')";
+
 if($conexao->query($sql) === true){
     $_SESSION['status_cadastro'] = true;
 }else {
