@@ -1,0 +1,83 @@
+  @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Gabarito&family=Inter:wght@100;200;600&family=Oswald&family=Poppins:ital,wght@0,600;1,700;1,900&family=Roboto:wght@100&display=swap');
+
+
+
+body{
+    background-image: url(./Apresentação\ comercial\ para\ empresas\ moderna\ azul\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Dela Gothic One', sans-serif;
+font-family: 'Gabarito', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 190px;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 300px;
+    font-size:18px;
+    justify-content: center;
+}
+
+
+
+#logo{
+    margin-top: -100px;
+    height: 350px;
+    width: 350px;
+
+  }
+
+h2{
+    color: rgb(255, 255, 255);
+    margin-top: -650px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    
+  }
+  li {
+    display: inline;
+    margin-right: 20px; /* Espaçamento entre os itens */
+
+  }
+
+  .lista{
+    display: grid;
+    justify-content: center;
+    margin-top: -240px;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+
+  }
+
+  #pagina-inicial{
+    color: white;
+    text-decoration: none;
+  }
+
+  #sobre-nos{
+    color: white;
+    text-decoration: none;
+  }
+  #contato{
+    color: white;
+    text-decoration: none;
+  }
+
+  
