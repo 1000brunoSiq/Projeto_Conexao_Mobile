@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,14 +22,16 @@
         <input type="password" placeholder="Senha" name="senha" id="senha">
         <br> <br>    
         <input type="hidden" name="acao" value="login">
-        <?php
-            //  mensagem de erro 
-            if (isset($_GET['erro']) && !empty($_GET['erro'])) {
-                echo '<p style="color: gray;">' . $_GET['erro'] . '</p>';
-            }
-        ?>
+            <div class="mensagem-erro">
+            <?php
+                // mensagem de erro 
+                if (isset($_GET['erro']) && !empty($_GET['erro'])) {
+                    echo '<p style="color: gray;">' . $_GET['erro'] . '</p>';
+                }
+            ?>
+            </div>
         <button class="meu-botao">LOGIN</button>
-        <button class="meu-botao-2">CADASTRAR</button>
+        <button class="meu-botao-2 cadastrar-botao">CADASTRAR</button>
 
     </div>
 </form>
@@ -80,7 +82,3 @@
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-</form>
-</body>
-</html>

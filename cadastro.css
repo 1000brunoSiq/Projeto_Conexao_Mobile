@@ -21,6 +21,15 @@ body{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* X, Y, Raio, Cor da Sombra */
 }
 
+.mensagem-erro {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 90%;
+    color: red;
+    font-size: 14px;
+}
+
 .h2{
 color: aliceblue;
 font-size: 100px;
@@ -116,6 +125,9 @@ border-radius: 3px;
      margin-left:625px;
      margin-top: 40px;
      font-weight: bolder;
+}
+.cadastrar-botao {
+    position: relative;
 }
 
 #icon{
