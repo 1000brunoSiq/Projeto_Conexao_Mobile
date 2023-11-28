@@ -36,13 +36,16 @@ main {
 .container a {
   margin: 1em;
   font-family: DM Sans;
-  font-size: 22px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   margin-top: 1em;
   color: white;
+  /* margin-left: 5em; */
 }
+
+
 
 .container a:hover {
   color: var(--color-hover)
@@ -106,7 +109,7 @@ main {
 }
 
 .body_container img {
-  margin-top: 3em;
+  margin-top: 8em;
   margin-bottom: 1em;
   height: 65em;
   border-top-right-radius: 2em;
@@ -214,7 +217,7 @@ main {
   font-weight: 500;
   line-height: 24px;
   margin-left: 0.5em;
-  margin-top: 0.1em;
+  margin-top: 0.8em;
 }
 
 .content_container span {
@@ -223,8 +226,8 @@ main {
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px;
-  margin-left: 4em;
+  line-height: 50px;
+  margin-left: 3.5em;
   margin-top: 0.1em;
 }
 
