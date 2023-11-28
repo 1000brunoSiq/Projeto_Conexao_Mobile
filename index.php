@@ -48,11 +48,11 @@
     </div>
   </header>
     <div class="body_container">
-      <img src="./assets/promo.png" alt="Promo Banner">
+      <img src="imagens/promo.png" alt="Promo Banner">
       <div class="grid_container">
         <div class="card">
           <div class="img_grid">
-            <img src="iphone15.png" alt="">
+            <img src="imagens/iphone15.png" alt="">
           </div>
           <div class="content_container"> 
             <H1>Apple</H1>
@@ -62,7 +62,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="samsung.png">
+            <img src="imagens/samsung.png">
           </div>
           <div class="content_container">
             <H1>Samsung</H1> 
@@ -72,7 +72,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="./assets/moto.png" alt="">
+            <img src="imagens/moto.png" alt="">
           </div>
           <div class="content_container">
             <H1>Motorola</H1>
@@ -82,7 +82,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="./assets/xiaomii2.png" alt="">
+            <img src="imagens/xiaomii2.png" alt="">
           </div>
           <div class="content_container">
             <H1>Xiaomi</H1>
@@ -92,7 +92,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="./assets/fonexiaomi.png" alt="">
+            <img src="imagens/fonexiaomi.png" alt="">
           </div>
           <div class="content_container">
             <H1>Xiaomi</H1>
@@ -102,7 +102,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="./assets/fonemoto.png" alt="">
+            <img src="imagens/fonemoto.png" alt="">
           </div>
           <div class="content_container">
             <H1>Motorola</H1>
@@ -112,7 +112,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="./assets/fonesam.png" alt="">
+            <img src="imagens/fonesam.png" alt="">
           </div>
           <div class="content_container">
             <H1>Samsung</H1>
@@ -122,7 +122,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="./assets/airpods.png" alt="">
+            <img src="imagens/airpods.png" alt="">
           </div>
           <div class="content_container">
             <H1>Apple</H1>
@@ -132,7 +132,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="./assets/carregadorapple.png" alt="">
+            <img src="imagens/carregadorapple.png" alt="">
           </div>
           <div class="content_container">
             <H1>Apple</H1>
@@ -142,7 +142,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="./assets/carregadormoto.png" alt="">
+            <img src="imagens/carregadormoto.png" alt="">
           </div>
           <div class="content_container">
             <H1>Motorola</H1>
@@ -152,7 +152,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="./assets/carregadorxiaomi.png" alt="">
+            <img src="imagens/carregadorxiaomi.png" alt="">
           </div>
           <div class="content_container">
             <H1>Xiaomi</H1>
@@ -162,7 +162,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="./assets/carregadorsam.png" alt="">
+            <img src="imagens/carregadorsam.png" alt="">
           </div>
           <div class="content_container">
             <H1>Samsung</H1>
