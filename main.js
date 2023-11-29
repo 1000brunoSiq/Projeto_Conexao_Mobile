@@ -1,19 +1,16 @@
 document.getElementById('loginIcon').addEventListener('click', function() {
-    var loginScreen = document.querySelector('.login_screen');
-    loginScreen.style.zIndex = '10';
-    loginScreen.style.opacity = '1';
-    loginScreen.style.transition = 'opacity 0.5s ease-in, z-index 0.5s ease-out';
-  });
+  // Adicione aqui o código para desativar o pop-up de login, se necessário.
 
-  document.getElementById('loginButton').addEventListener('click', function() {
-    document.getElementById('loginIcon').classList.add('invi');
-    document.getElementById('userIcon').classList.remove('invi');
-    document.getElementById('cartIcon').classList.remove('invi');
-    var loginScreen = document.querySelector('.login_screen');
-    loginScreen.style.zIndex = '-10';
-    loginScreen.style.opacity = '0';
-    loginScreen.style.transition = 'opacity 0.5s ease-in, z-index 0.5s ease-out';
-  });
+  // Redirecione para a nova tela
+  window.location.href = 'cadastro.php';
+});
+
+document.getElementById('loginButton').addEventListener('click', function() {
+  // Adicione aqui o código necessário para processar o login, se houver algum.
+
+  // Redirecione para a nova tela após o login
+  window.location.href = 'cadastro.php';
+});
 
 var userIcon = document.getElementById('userIcon');
 var loginIcon = document.getElementById('loginIcon');
@@ -24,8 +21,6 @@ userIcon.addEventListener('click', function() {
   userIcon.classList.add('invi');
   cartIcon.classList.add('invi');
 });
-
-
 
 document.getElementById("metodo_pagamento").addEventListener("change", function () {
   var metodoPagamento = this.value;
@@ -44,5 +39,3 @@ document.getElementById("metodo_pagamento").addEventListener("change", function 
       document.getElementById("pix_campos").style.display = "block";
   }
 });
-
-
