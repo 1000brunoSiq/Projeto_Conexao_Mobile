@@ -56,3 +56,4 @@ $conexao->close();
 
 header('location: cadastro.php');
 exit;
+?>

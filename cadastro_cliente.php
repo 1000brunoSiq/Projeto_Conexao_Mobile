@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,13 +18,40 @@
     <div id="form">
 
 
-        <form action="cadastro_cliente.php" method="post">
+        <form action="cad_backend.php" method="post">
 
             <div class="painel-2">
 
                 <h1>Crie sua conta</h1>
 
                 <h2 id="titulo">Preencha seus dados</h2>
+
+                <!-- Exibindo alerta de sucesso -->
+                <div class="alert alert-success">
+                    <?php
+                    if (isset($_SESSION['cadastro_sucesso'])) {
+                        echo $_SESSION['cadastro_sucesso'];
+                        unset($_SESSION['cadastro_sucesso']);
+                    } ?>
+                </div>  
+                <!-- Exibindo alerta de usuário existente -->
+                <div class="alert alert-warning">
+                    <?php
+                    if (isset($_SESSION['usuario_existe'])) {
+                        echo $_SESSION['usuario_existe'];
+                        unset($_SESSION['usuario_existe']);
+                    }
+                    ?>
+                </div>  
+                 <!-- Exibindo alerta de erro durante o cadastro -->
+                 <div class="alert alert-danger">
+                    <?php
+                    if (isset($_SESSION['error'])) {
+                        echo $_SESSION['error'];
+                        unset($_SESSION['error']);
+                    }
+                    ?>
+                </div>
 
                 <div class="input">
                 <i class="fa-solid fa-user"></i>
