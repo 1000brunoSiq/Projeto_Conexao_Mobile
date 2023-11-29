@@ -17,14 +17,14 @@
     <header>
     <div class="login_screen">
       <div class="login_container">
-        <h1>Entrar</h1>
+        <!-- <h1>Entrar</h1>
         <h3>Insira seu email e senha para entrar!</h3>
         <p>E-mail<span>*</span></p>
         <input id="email" class="login_input" type="email" placeholder="Email" autofocus required>
         <p>Senha<span>*</span></p>
         <input id="email" class="login_input" type="password" placeholder="Senha" autofocus required>
         <a href="#">Não possui conta? Cadastre-se já!</a>
-        <button class="login_submit" id="loginButton">ENTRAR</button>
+        <button class="login_submit" id="loginButton">ENTRAR</button> -->
       </div>
     </div>
     <div class="container">
@@ -181,9 +181,9 @@
         <a href="https://www.twitter.com" target="_blank"><span> <i class="fa-brands fa-twitter"></i> </span></a>
       </div>
       <div>
-        <a href="#">Sobre nós</a>
-        <a href="#">Fale conosco</a>
-        <a href="#">Área do colaborador</a>
+        <a href="sobre_nos.html">Sobre nós</a>
+        <a href="contato.html">Fale conosco</a>
+        <a href="area_do_colaborador.php">Área do colaborador</a>
       </div>
     </div>
   </main>
