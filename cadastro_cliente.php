@@ -1,55 +1,60 @@
-<?php
-session_start();
-include('config.php');
+<!DOCTYPE html>
 
-if (isset($_SESSION['cadastro_sucesso']) && $_SESSION['cadastro_sucesso'] === true) {
-    echo '<div class="alert alert-success">';
-    echo 'Cadastro realizado com sucesso!';
-    echo '</div>';
-    unset($_SESSION['cadastro_sucesso']);
-}
+<html lang="en">
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Outros campos do formulário...
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Login</title>
+    <link rel="stylesheet" href="cadastro_cliente.css">
+    <script src="https://kit.fontawesome.com/0100cd96fb.js" crossorigin="anonymous"></script>
+</head>
 
-    if (empty($nome) || empty($celular) || empty($email) || empty($senha) || empty($endereco)) {
-        $_SESSION['erro'] = "Formulários vazios. Preencha os campos para validação do cadastro.";
-        // header("Location: cadastro.php");
-        // exit();
-    }
+<body>
+
+    <div id="form">
 
 
+        <form action="cadastro_cliente.php" method="post">
 
-    $nome = mysqli_real_escape_string($conexao, trim($_POST['nome']));
-    $celular = mysqli_real_escape_string($conexao, trim($_POST['celular']));
-    $email = mysqli_real_escape_string($conexao, trim($_POST['email']));
-    $senha = mysqli_real_escape_string($conexao, trim(md5($_POST['senha'])));
-    $endereco = mysqli_real_escape_string($conexao, trim($_POST['endereco']));
+            <div class="painel-2">
 
-    $sql = "SELECT COUNT(*) AS total FROM cadastro_clientes WHERE email = '$email'";
-    $result = mysqli_query($conexao, $sql);
-    $row = mysqli_fetch_assoc($result);
+                <h1>Crie sua conta</h1>
 
-    if ($row['total'] == 1) {
-        $_SESSION['usuario_existe'] = "Email já cadastrado. Escolha outro email.";
-        header('location: cadastro.php');  // Redireciona para a página de cadastro
-        exit;
-    }
-}
-$sql = "INSERT INTO cadastro_clientes (nome, celular, email, senha, endereco) VALUES ('$nome', '$celular', '$email', '$senha', '$endereco')";
+                <h2 id="titulo">Preencha seus dados</h2>
 
-if ($conexao->query($sql) === true) {
-    // $_SESSION['status_cadastro'] = true;
-    $_SESSION['cadastro_sucesso'] = "Cadastro realizado com sucesso!";
-    header('location: cadastro.php');
-    exit;
-} else {
-    $_SESSION['status_cadastro'] = false;
-    $_SESSION['error'] = "Erro ao cadastrar o usuário: " . $conexao->error;
-}
+                <div class="input">
+                <i class="fa-solid fa-user"></i>
+                    <input type="username" placeholder="Nome Completo" name="nome" id="nome" required />
+                </div>
+                <div class="input">
+                <i class="fa-solid fa-mobile"></i>
+                <input type="int" placeholder="Celular" name="celular" id="celular" required />
+                </div>
 
+                <div class="input">
+                <i class="fa-solid fa-envelope"></i>
 
-$conexao->close();
+                    <input type="text" placeholder="E-mail" name="email" id="email" required />
+                </div>
 
-header('location: cadastro.php');
-exit;
+                <div class="input">
+                <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Senha" name="senha" id="senha" required />
+                </div>
+
+                <div class="input">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Endereço" name="endereco" id="endereco" required />
+                </div>
+
+                <div class="btn">
+                    <button type="submit" >Cadastrar</button>
+                </div>
+
+                <input type="hidden" name="acao" value="cadastro">
+
+            </div>
+
+    </div>
+

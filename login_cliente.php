@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro e Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="login_cliente.css">
 </head>
 
 <body>
@@ -92,7 +92,7 @@
                     <input class="meu-botao" type="submit" value="LOGIN" >
                 </p>
                 <div>
-                    Não tem conta? <a class="cadastre-se" href="cadastro.php">Cadastre-se</a>
+                    Não tem conta? <a class="cadastre-se" href="cadastro_cliente.php">Cadastre-se</a>
                 </div>
                 
             </div>

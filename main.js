@@ -2,14 +2,14 @@ document.getElementById('loginIcon').addEventListener('click', function() {
   // Adicione aqui o código para desativar o pop-up de login, se necessário.
 
   // Redirecione para a nova tela
-  window.location.href = 'cadastro.php';
+  window.location.href = 'login_cliente.php';
 });
 
 document.getElementById('loginButton').addEventListener('click', function() {
   // Adicione aqui o código necessário para processar o login, se houver algum.
 
   // Redirecione para a nova tela após o login
-  window.location.href = 'cadastro.php';
+  window.location.href = 'login_cliente.php';
 });
 
 var userIcon = document.getElementById('userIcon');
