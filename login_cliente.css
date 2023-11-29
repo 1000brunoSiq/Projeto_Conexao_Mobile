@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Dela+Gothic+One&family=Poppins:wght@700;800;900&display=swap');
+
+body{
+    background-color: #f0eeee54;
+    color: aliceblue;
+    font-family: 'Belanosima', sans-serif; 
+    font-family: 'Dela Gothic One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.painel{
+    margin: auto;
+    /* margin-left: 400px; */
+    margin-top: 70px;
+    background-color:  rgb(101, 215, 243);
+    width: 500px;
+    height: 420px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* X, Y, Raio, Cor da Sombra */
+}
+
+
+/* .mensagem-erro {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 90%;
+    color: red;
+    font-size: 14px;
+} */
+
+.h2{
+color: aliceblue;
+font-size: 100px;
+font-weight: bolder;
+
+}
+
+
+h4{
+    text-align: left;
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+   }
+
+#titulo{
+    color: rgba(128, 128, 128, 0.685);
+}
+
+
+#email{
+    margin-top: -100px;
+    height: 25px;
+    width: 280px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+#senha{
+    
+    height: 25px;
+    border: none;
+    width: 280px;
+    border-radius: 10px;
+    margin: cover;
+
+}
+
+  
+.meu-botao{
+    color: aliceblue;
+    background-color: rgb(14, 145, 197);
+    border-color: aliceblue;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 25px;
+    height: 50px;
+    width:170px;
+    font-size: medium;
+    font-weight: 700;
+    cursor: pointer;
+
+
+}
+
+.cadastre-se{
+/* padding: 0.4rem; */
+/* border-radius: 4px; */
+font-size: o.10rem;
+text-decoration: none;
+color: rgb(100, 96, 96)
+}
