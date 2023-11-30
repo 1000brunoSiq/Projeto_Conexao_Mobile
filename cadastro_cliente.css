@@ -79,15 +79,19 @@ body {
     background: rgb(10, 100, 141);
     ;
 }
+.mensagem-erro-container {
+    min-height: 20px;
+    position: absolute;
+    top: 260px;
+    width: 100%;
+    text-align: center;
+}
 
 .mensagem-erro {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 90%;
     color: red;
     font-size: 14px;
-} 
+}
+
 @keyframes iniciar{
     0%{
         top: -20%;

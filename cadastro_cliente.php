@@ -18,73 +18,81 @@ session_start();
     <div id="form">
 
 
-        <form action="cad_backend.php" method="post">
+        <form action="cad_backend.php" method="post" novalidate>
+            <div class="mensagem_erro">
+                <div class="painel-2">
 
-            <div class="painel-2">
+                    <h1>Crie sua conta</h1>
 
-                <h1>Crie sua conta</h1>
+                    <h2 id="titulo">Preencha seus dados</h2>
 
-                <h2 id="titulo">Preencha seus dados</h2>
+                    <!-- Exibindo alerta de sucesso -->
+                    <div class="mensagem-erro-container ">
+                        <?php
+                        if (isset($_SESSION['cadastro_sucesso'])) {
+                            echo $_SESSION['cadastro_sucesso'];
+                            unset($_SESSION['cadastro_sucesso']);
+                        } ?>
+                    </div>
+                    <!-- Exibindo alerta de usuário existente -->
+                    <div class="mensagem-erro-container ">
+                        <?php
+                        if (isset($_SESSION['usuario_existe'])) {
+                            echo $_SESSION['usuario_existe'];
+                            unset($_SESSION['usuario_existe']);
+                        }
+                        ?>
+                    </div>
+                    <!-- Exibindo alerta de erro durante o cadastro -->
+                    <div class="mensagem-erro-container ">
+                        <?php
+                        if (isset($_SESSION['error'])) {
+                            echo $_SESSION['error'];
+                            unset($_SESSION['error']);
+                        }
+                        ?>
+                    </div>
+                    <!-- Exibindo alerta de erro durante o cadastro -->
+                    <div class="mensagem-erro-container ">
+                        <?php
+                        if (isset($_SESSION['erro_cadastro'])) {
+                            echo $_SESSION['erro_cadastro'];
+                            unset($_SESSION['erro_cadastro']);
+                        }
+                        ?>
+                    </div>
 
-                <!-- Exibindo alerta de sucesso -->
-                <div class="alert alert-success">
-                    <?php
-                    if (isset($_SESSION['cadastro_sucesso'])) {
-                        echo $_SESSION['cadastro_sucesso'];
-                        unset($_SESSION['cadastro_sucesso']);
-                    } ?>
-                </div>  
-                <!-- Exibindo alerta de usuário existente -->
-                <div class="alert alert-warning">
-                    <?php
-                    if (isset($_SESSION['usuario_existe'])) {
-                        echo $_SESSION['usuario_existe'];
-                        unset($_SESSION['usuario_existe']);
-                    }
-                    ?>
-                </div>  
-                 <!-- Exibindo alerta de erro durante o cadastro -->
-                 <div class="alert alert-danger">
-                    <?php
-                    if (isset($_SESSION['error'])) {
-                        echo $_SESSION['error'];
-                        unset($_SESSION['error']);
-                    }
-                    ?>
+                    <div class="input">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="username" placeholder="Nome Completo" name="nome" id="nome" required />
+                    </div>
+                    <div class="input">
+                        <i class="fa-solid fa-mobile"></i>
+                        <input type="int" placeholder="Celular" name="celular" id="celular" required />
+                    </div>
+
+                    <div class="input">
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input type="text" placeholder="E-mail" name="email" id="email" required />
+                    </div>
+
+                    <div class="input">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Senha" name="senha" id="senha" required />
+                    </div>
+
+                    <div class="input">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Endereço" name="endereco" id="endereco" required />
+                    </div>
+
+                    <div class="btn">
+                        <button type="submit">Cadastrar</button>
+                    </div>
+
+                    <input type="hidden" name="acao" value="cadastro">
+
                 </div>
-
-                <div class="input">
-                <i class="fa-solid fa-user"></i>
-                    <input type="username" placeholder="Nome Completo" name="nome" id="nome" required />
-                </div>
-                <div class="input">
-                <i class="fa-solid fa-mobile"></i>
-                <input type="int" placeholder="Celular" name="celular" id="celular" required />
-                </div>
-
-                <div class="input">
-                <i class="fa-solid fa-envelope"></i>
-
-                    <input type="text" placeholder="E-mail" name="email" id="email" required />
-                </div>
-
-                <div class="input">
-                <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="Senha" name="senha" id="senha" required />
-                </div>
-
-                <div class="input">
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="text" placeholder="Endereço" name="endereco" id="endereco" required />
-                </div>
-
-                <div class="btn">
-                    <button type="submit" >Cadastrar</button>
-                </div>
-
-                <input type="hidden" name="acao" value="cadastro">
-
             </div>
-
     </div>
-
