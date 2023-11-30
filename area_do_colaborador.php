@@ -6,12 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Area do colaborador</title>
         <link rel="stylesheet" href="area_do_colaborador.css">
+        <script src="https://kit.fontawesome.com/0100cd96fb.js" crossorigin="anonymous"></script>
+
     </head>
 
     <body>
-
-
-
+    <a href="index.php" onclick="fecharAplicacao()" style="position: fixed; top: 10px; left: 10px; font-size: 36px; text-decoration: none; ">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    </a>
+    
         <form action="login_colaborador.php" method="POST">
 
             <div class="painel-2">
