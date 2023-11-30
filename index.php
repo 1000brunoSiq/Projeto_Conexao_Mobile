@@ -55,9 +55,11 @@
             <img src="imagens/iphone15.png" alt="">
           </div>
           <div class="content_container"> 
+            <a href="pagamento.html">
             <H1>Apple</H1>
             <p>Apple iPhone 15 Pro Max <br> (256 GB) - Titânio Natural </p> 
             <span>R$9.899,00</span>
+            </a>
           </div>
         </div>
         <div class="card">
