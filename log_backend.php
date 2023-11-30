@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $senha = $_POST["senha"];
 
-    // Inicializa a variável de mensagem
+    
     $mensagem_erro = "";
 
     if (empty($email) || empty($senha)) {
@@ -30,15 +30,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header('Location: index.php');
             exit;
         } else {
-            // Mensagem de erro específica para usuário/senha incorretos
+           
             $mensagem_erro = "Usuário e/ou senha incorretos";
         }
     }
 
-    // Define a mensagem de erro na sessão
+  
     $_SESSION['erro'] = $mensagem_erro;
 
-    // Redireciona para a página de login
     header("Location: login_cliente.php");
     exit;
 }

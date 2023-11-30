@@ -144,7 +144,6 @@ button {
   cursor: pointer;
 }
 
-/* Adicionando uma classe para esconder/mostrar campos específicos */
 .campos-especificos {
   display: none;
 }

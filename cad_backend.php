@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($row['total'] == 1) {
         $_SESSION['usuario_existe'] = "Email já cadastrado. Escolha outro email.";
-        header('location: cadastro_cliente.php');  // Redireciona para a página de cadastro
+        header('location: cadastro_cliente.php');  
         exit;
     }
 

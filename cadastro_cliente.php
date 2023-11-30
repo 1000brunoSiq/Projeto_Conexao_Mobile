@@ -26,7 +26,7 @@ session_start();
 
                     <h2 id="titulo">Preencha seus dados</h2>
 
-                    <!-- Exibindo alerta de sucesso -->
+                    <!--  alertaa de sucesso -->
                     <div class="mensagem-erro-container ">
                         <?php
                         if (isset($_SESSION['cadastro_sucesso'])) {
@@ -34,7 +34,7 @@ session_start();
                             unset($_SESSION['cadastro_sucesso']);
                         } ?>
                     </div>
-                    <!-- Exibindo alerta de usuário existente -->
+                    <!--  alerta de usuário existente -->
                     <div class="mensagem-erro-container ">
                         <?php
                         if (isset($_SESSION['usuario_existe'])) {
@@ -43,7 +43,7 @@ session_start();
                         }
                         ?>
                     </div>
-                    <!-- Exibindo alerta de erro durante o cadastro -->
+                    <!--  alerta de erro durante o cadastro -->
                     <div class="mensagem-erro-container ">
                         <?php
                         if (isset($_SESSION['error'])) {
@@ -52,7 +52,7 @@ session_start();
                         }
                         ?>
                     </div>
-                    <!-- Exibindo alerta de erro durante o cadastro -->
+                    <!--  alerta de erro durante o cadastro -->
                     <div class="mensagem-erro-container ">
                         <?php
                         if (isset($_SESSION['erro_cadastro'])) {

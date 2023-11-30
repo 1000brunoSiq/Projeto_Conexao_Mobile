@@ -21,7 +21,6 @@
                 <h1>Area do colaborador</h1>
                 <h3 id="titulo">Preencha seus dados</h3>
                 <?php
-                //  mensagem de erro 
                 if (isset($_GET['erro']) && !empty($_GET['erro'])) {
                     echo '<p style="color: gray;">' . $_GET['erro'] . '</p>';
                 }

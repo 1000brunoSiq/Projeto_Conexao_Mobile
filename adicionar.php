@@ -1,31 +1,25 @@
 <?php
 
-// arquivo de conexão com o banco de dados
 include_once('config.php');
 
-// se o formulário de adição for enviado
 if (isset($_POST['add'])) {
     $nome = mysqli_real_escape_string($conexao, $_POST['nome']);
     $descrição = mysqli_real_escape_string($conexao, $_POST['descrição']);
     $valor = mysqli_real_escape_string($conexao, $_POST['valor']);
     $quantidade = mysqli_real_escape_string($conexao, $_POST['quantidade']);
 
-    // consulta SQL para inserir um novo produto
     $sqlInsert = "INSERT INTO produtos (nome, descrição, valor, quantidade) VALUES ('$nome', '$descrição', '$valor', '$quantidade')";
 
-    // executar a consulta e verificar se foi bem-sucedida
     if ($conexao->query($sqlInsert) === TRUE) {
         echo "Novo produto adicionado com sucesso!";
     } else {
         echo "Erro: " . $sqlInsert . "<br>" . $conexao->error;
     }
 
-    // encerrar a conexão
     $conexao->close();
 }
 ?>
 
-<!-- arquivo HTML com o formulário de adição -->
 <!DOCTYPE html>
 <html>
 

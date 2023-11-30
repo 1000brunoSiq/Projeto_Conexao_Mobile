@@ -43,7 +43,6 @@ body {
 .input i {
     font-size: 1.2em;
     padding: 5%;
-    /* -webkit-background-clip: text; */
     
 }
 .input input{

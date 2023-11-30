@@ -1,6 +1,6 @@
 header {
-    background-color: #3498db; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branco */
+    background-color: #3498db; 
+    color: #fff; 
     padding: 1px;
     text-align: center;
     display: flex;
@@ -9,7 +9,7 @@ header {
   }
   
   .logo {
-    width: 220px; /* Largura da logo, ajuste conforme necessário */
+    width: 220px; 
     height:180px;
     
   }
@@ -25,10 +25,10 @@ header {
   }
   
   .button {
-    background-color: #fff; /* Cor de fundo dos botões */
-    color: #3498db; /* Cor do texto dos botões */
+    background-color: #fff; 
+    color: #3498db; 
     padding: 8px 15px;
-    margin-left: 10px; /* Espaçamento entre os botões */
+    margin-left: 10px; 
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -107,17 +107,17 @@ header {
   
   
   footer {
-    background-color: #3498db; /* Cor de fundo azul */
-    color: #fff; /* Cor do texto branco */
+    background-color: #3498db; 
+    color: #fff; 
     padding: 40px;
     text-align: center;
     font-weight: bold
   }
   
   footer a {
-    color: #fff; /* Cor dos links brancos */
+    color: #fff; 
     text-decoration: none;
-    margin: 0 50px; /* Espaçamento entre os links */
+    margin: 0 50px; 
   }
   
   

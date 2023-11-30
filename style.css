@@ -40,14 +40,10 @@
   
   .content {
     padding: 20px 0px;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+  
   }
   
-  /* ================================== */
-  /* Layout page CSS */
-  /* ================================== */
-  
+ 
   .tile {  
     width: 100%;
       display: inline-block;
@@ -62,16 +58,12 @@
   }
   
   .tile img:hover {
-    /* TODO: MODULE_CARDS */
-    /* 1. Fill in the required properties. */
     transform: scale(1.1);
     transition: transform .5s ease;
     filter: blur(1px);
     filter: brightness(70%);
   }
   
-  /* Hint: Notice the position:absolute and z-index properties. */
-  /* Think about how those in relation to the existing "tile" classes. */
   .tile-text {
     z-index: 1;
     text-transform: uppercase;
@@ -88,14 +80,10 @@
   
   
   .hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../assets/hero.jpg");
   
-    /* TODO: MODULE_LAYOUT */
-    /* 1. Set a specific height. */
     height: 50%;
-    /* 2. Position and center the image to scale nicely on all screens. */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -130,19 +118,15 @@
     margin-right: 36px;
   }
   
-  /* ================================== */
-  /* Adventures grid page CSS */
-  /* ================================== */
+
   
   .adventure-card img {
-    /* TODO: MODULE_ADVENTURES_GRID */
-    /* 1. Fill in the required properties. */
+   
     display: block;
   }
   
   .adventure-card:hover {
-    /* TODO: MODULE_ADVENTURES_GRID */
-    /* 1. Fill in the required properties. */
+ 
     transform: scale(1.1);
     transition: transform .5s ease;
     filter: blur(1px);
@@ -161,23 +145,18 @@
   }
   
   
-  /* ================================== */
-  /* Adventure details page CSS */
-  /* ================================== */
+ 
   
   .adventure-detail-card {
-    /* TODO: MODULE_ADVENTURE_DETAILS */
-    /* 1. Fill in the required properties. */
+
   
   }
   
   .adventure-card-image {
-    /* TODO: MODULE_ADVENTURE_DETAILS */
-    /* 1. Fill in the required properties. */
+   
   }
   .adventure-card-image:hover {
-    /* TODO: MODULE_ADVENTURE_DETAILS */
-    /* 1. Fill in the required properties. */
+  
   }
   .experience-content ul li {
     margin-left: 16px;
@@ -206,7 +185,6 @@
   }
   
   @media only screen and (min-width: 768px) {
-    /* For desktops phones: */
     #reservation {
       width: 400px;
       position: fixed;
