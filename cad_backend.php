@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $endereco = mysqli_real_escape_string($conexao, trim($_POST['endereco']));
 
     if (empty($nome) || empty($celular) || empty($email) || empty($senha) || empty($endereco)) {
-        $_SESSION['erro_cadastro'] = "Formulários vazios. Preencha os campos para validação do cadastro.";
+        $_SESSION['erro_cadastro'] = "Preencha os campos para validação do cadastro.";
         header("Location: cadastro_cliente.php");
         exit();
     }
