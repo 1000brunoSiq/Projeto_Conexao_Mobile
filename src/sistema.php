@@ -1,12 +1,6 @@
 <?php
 session_start();
 include_once('config.php');
-// print_r($_SESSION);
-// if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)) {
-//     unset($_SESSION['email']);
-//     unset($_SESSION['senha']);
-// }
-// $logado = $_SESSION['email'];
 
 $sql = "SELECT * FROM produtos ORDER BY id DESC";
 

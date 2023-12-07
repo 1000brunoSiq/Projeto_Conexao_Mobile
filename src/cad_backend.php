@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($nome) || empty($celular) || empty($email) || empty($senha) || empty($endereco)) {
         $_SESSION['erro_cadastro'] = "Preencha os campos para validação do cadastro.";
-        header("Location: cadastro_cliente.php");
+        header("Location: interfaces_e_estilos/cadastro_cliente.php");
         exit();
     }
 
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($row['total'] == 1) {
         $_SESSION['usuario_existe'] = "Email já cadastrado. Escolha outro email.";
-        header('location: cadastro_cliente.php');  
+        header('location: interfaces_e_estilos/cadastro_cliente.php');  
         exit;
     }
 
@@ -29,12 +29,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conexao->query($sql) === true) {
         $_SESSION['cadastro_sucesso'] = "Cadastro realizado com sucesso!";
-        header('location: login_cliente.php');
+        header('location: interfaces_e_estilos/login_cliente.php');
         exit;
     } else {
         $_SESSION['status_cadastro'] = false;
         $_SESSION['error'] = "Erro ao cadastrar o usuário: " . $conexao->error;
-        header('location: cadastro_cliente.php');
+        header('location: interfaces_e_estilos/cadastro_cliente.php');
         exit;
     }
 }

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #5CE1E6;
+  --color-hover: #38B6FF;
+  --light-input: #E0E5F2;
+}
+
+main {
+  height: 100vh;
+  background-color: white;
+}
+
+.container-header {
+  width: 100%;
+  height: 7em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+
+}
+
+.container-header img {
+  height: 19em;
+}
+
+.container-header a {
+  margin: 1em;
+  font-family: DM Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 1em;
+  color: white;
+
+}
+
+
+
+.container-header a:hover {
+  color: var(--color-hover)
+}
+
+.search_container {
+  position: relative;
+  height: 3em;
+  margin-right: 3em;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2em;
+  cursor: pointer;
+}
+
+.search_input {
+  height: 3em;
+  width: 23em;
+  padding-left: 0.5em;
+  border: unset;
+  border-radius: 1.2em;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+.search_input:focus {
+  outline: none;
+}
+
+.search_container i {
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  color: var #000;
+  right: 5%;
+  top: 30%;
+}
+
+.search_container i:active {
+  transform: scale(0.95);
+}
+
+.search_input::placeholder {
+  color: #000;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.28px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+}
+
+form {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.campos-especificos {
+  display: none;
+}
+
+.campos-especificos.mostrar {
+  display: block;
+}
+
+.container-fo {
+  width: 100%;
+  height: 7em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+}
+
+.container-fo a {
+  margin: 1em;
+  font-family: DM Sans;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 1em;
+  color: white;
+}
+
+.container-fo a:hover {
+  color: var(--color-hover)
+}

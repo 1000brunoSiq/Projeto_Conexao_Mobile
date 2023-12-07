@@ -6,7 +6,7 @@ session_start();
 
 // if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
     if (empty($_POST['email']) || empty($_POST['senha'])) { // impede que a requisição seja feita caso os campos estejam vazios e gera um alerta conforme mostra na prox line
-         header('Location: area_do_colaborador.php?erro=Campos email e senha são obrigatórios!');
+         header('Location: interfaces_e_estilos/area_do_colaborador.php?erro=Campos email e senha são obrigatórios!');
         exit;}
  //Acessa
     
@@ -28,7 +28,7 @@ session_start();
         unset($_SESSION['email']);
         unset($_SESSION['senha']);
         $erro = "Usuário e/ou senha incorretos!";
-        header("Location: area_do_colaborador.php?erro=" . urlencode($erro));    
+        header("Location: interfaces_e_estilos/area_do_colaborador.php?erro=" . urlencode($erro));    
 
     } else {
 
