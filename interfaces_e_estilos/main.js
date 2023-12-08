@@ -1,12 +1,12 @@
 document.getElementById('loginIcon').addEventListener('click', function() {
   
-  window.location.href = 'login_cliente.php';
+  window.location.href = '../interfaces_e_estilos/login_cliente.php';
 });
 
 document.getElementById('loginButton').addEventListener('click', function() {
   
 
-  window.location.href = 'login_cliente.php';
+  window.location.href = '../interfaces_e_estilos/login_cliente.php';
 });
 
 var userIcon = document.getElementById('userIcon');

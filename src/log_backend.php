@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($qtd > 0) {
             $_SESSION["email"] = $email;
             $_SESSION["senha"] = $senha;
-            header('Location: interfaces_e_estilos/index.php');
+            header('Location: ../interfaces_e_estilos/index.php');
             exit;
         } else {
            
@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
     $_SESSION['erro'] = $mensagem_erro;
 
-    header("Location: interfaces_e_estilos/login_cliente.php");
+    header("Location: ../interfaces_e_estilos/login_cliente.php");
     exit;
 }
 ?>

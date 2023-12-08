@@ -13,7 +13,7 @@ session_start();
 </head>
 
 <body>
-    <form action="src/log_backend.php" method="post">
+    <form action="../src/log_backend.php" method="post">
         <div class="painel">
             <h1>CONEXÃO MOBILE</h1>
 

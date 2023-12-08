@@ -11,11 +11,11 @@
     </head>
 
     <body>
-    <a href="interfaces_e_estilos/index.php" onclick="fecharAplicacao()" style="position: fixed; top: 10px; left: 10px; font-size: 36px; text-decoration: none; ">
+    <a href="../interfaces_e_estilos/index.php" onclick="fecharAplicacao()" style="position: fixed; top: 10px; left: 10px; font-size: 36px; text-decoration: none; ">
     <i class="fa-solid fa-right-from-bracket"></i>
     </a>
     
-        <form action="src/login_colaborador.php" method="POST">
+        <form action="../src/login_colaborador.php" method="POST">
 
             <div class="painel-2">
                 <h1>Area do colaborador</h1>

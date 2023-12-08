@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="container">
-      <img src="imagens/Conexão_Mobilo-removebg-preview.png " alt="Logo">
+      <img src="../imagens/Conexão_Mobilo-removebg-preview.png " alt="Logo">
       <div>
         <a href="celulares.html">Celulares</a>
         <a href="#">Acessorios</a>
@@ -48,11 +48,11 @@
     </div>
   </header>
     <div class="body_container">
-      <img src="imagens/promo.png" alt="Promo Banner">
+      <img src="../imagens/promo.png" alt="Promo Banner">
       <div class="grid_container">
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/iphone15.png" alt="">
+            <img src="../imagens/iphone15.png" alt="">
           </div>
           <div class="content_container"> 
             <a href="pagamento.html">
@@ -64,7 +64,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/samsung.png">
+            <img src="../imagens/samsung.png">
           </div>
           <div class="content_container">
             <H1>Samsung</H1> 
@@ -74,7 +74,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/moto.png" alt="">
+            <img src="../imagens/moto.png" alt="">
           </div>
           <div class="content_container">
             <H1>Motorola</H1>
@@ -84,7 +84,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/xiaomii2.png" alt="">
+            <img src="../imagens/xiaomii2.png" alt="">
           </div>
           <div class="content_container">
             <H1>Xiaomi</H1>
@@ -94,7 +94,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/fonexiaomi.png" alt="">
+            <img src="../imagens/fonexiaomi.png" alt="">
           </div>
           <div class="content_container">
             <H1>Xiaomi</H1>
@@ -104,7 +104,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/fonemoto.png" alt="">
+            <img src="../imagens/fonemoto.png" alt="">
           </div>
           <div class="content_container">
             <H1>Motorola</H1>
@@ -114,7 +114,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/fonesam.png" alt="">
+            <img src="../imagens/fonesam.png" alt="">
           </div>
           <div class="content_container">
             <H1>Samsung</H1>
@@ -124,7 +124,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/airpods.png" alt="">
+            <img src="../imagens/airpods.png" alt="">
           </div>
           <div class="content_container">
             <H1>Apple</H1>
@@ -134,7 +134,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/carregadorapple.png" alt="">
+            <img src="../imagens/carregadorapple.png" alt="">
           </div>
           <div class="content_container">
             <H1>Apple</H1>
@@ -144,7 +144,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/carregadormoto.png" alt="">
+            <img src="../imagens/carregadormoto.png" alt="">
           </div>
           <div class="content_container">
             <H1>Motorola</H1>
@@ -154,7 +154,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/carregadorxiaomi.png" alt="">
+            <img src="../imagens/carregadorxiaomi.png" alt="">
           </div>
           <div class="content_container">
             <H1>Xiaomi</H1>
@@ -164,7 +164,7 @@
         </div>
         <div class="card">
           <div class="img_grid">
-            <img src="imagens/carregadorsam.png" alt="">
+            <img src="../imagens/carregadorsam.png" alt="">
           </div>
           <div class="content_container">
             <H1>Samsung</H1>
