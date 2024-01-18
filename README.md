@@ -50,7 +50,7 @@
   <a href="https://youtu.be/LaUXfS_jNkc?si=3DYqJourfFZqIXfB" style="display:block; text-align:center;" target="_blank">Assista ao
         vídeo do projeto</a>
   
-  <a href="conexaomobiletohostweb-production.up.railway.app/index.html" style="display:block; text-align:center;" target="_blank"> Navegue pelo site</a>
+  <a href="https://conexaomobiletohostweb-production.up.railway.app/index.html" style="display:block; text-align:center;" target="_blank"> Navegue pelo site</a>
 
        
 
