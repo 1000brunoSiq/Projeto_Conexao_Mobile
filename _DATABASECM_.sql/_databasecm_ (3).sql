@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28/10/2023 às 21:42
+-- Tempo de geração: 20/01/2024 às 00:10
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -18,8 +18,32 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `conexaomobile`
+-- Banco de dados: `_databasecm_`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `cadastro_clientes`
+--
+
+CREATE TABLE `cadastro_clientes` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `celular` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `endereco` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `cadastro_clientes`
+--
+
+INSERT INTO `cadastro_clientes` (`id`, `nome`, `celular`, `email`, `senha`, `endereco`) VALUES
+(14, 'Bruno Siqueira dos Anjos', '11988776655', 'bruno@email.com', '2023', 'Av Cipriano Rodrigues ,492'),
+(15, 'Gabriel  Souza Silva', '11988776655', 'gabriel@email.com', '2023', 'Av paulista , 1000'),
+(16, 'Isabela', '11987654321', 'isabela@email.com', '2023', 'Av paulista , 1000');
 
 -- --------------------------------------------------------
 
@@ -40,9 +64,8 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `nome`, `descrição`, `valor`, `quantidade`) VALUES
-(1, 'Iphone XR', '128GB', 2250.00, 5),
 (3, 'Samsung Galaxy S23', '128GB', 4110.00, 8),
-(4, 'Iphone 13', '128GB', 4249.00, 4);
+(4, 'Iphone 13', '128GB', 4249.00, 110);
 
 -- --------------------------------------------------------
 
@@ -55,7 +78,7 @@ CREATE TABLE `users` (
   `nome` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `senha` varchar(255) NOT NULL,
-  `tipo` char(1) NOT NULL
+  `tipo` varchar(25) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -63,12 +86,18 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `nome`, `email`, `senha`, `tipo`) VALUES
-(12, 'Gabriel', 'gabreuteste@hotmail.com', '123', ''),
-(13, 'gabriel', 'gabriel@conexao.com', 'batata123', '');
+(15, 'Bruno', 'bruno@email.com', '12345', 'admin'),
+(16, 'Gabriel\r\n', 'gabriel@email.com', '12345', 'admin');
 
 --
 -- Índices para tabelas despejadas
 --
+
+--
+-- Índices de tabela `cadastro_clientes`
+--
+ALTER TABLE `cadastro_clientes`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices de tabela `produtos`
@@ -87,16 +116,22 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT de tabela `cadastro_clientes`
+--
+ALTER TABLE `cadastro_clientes`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
